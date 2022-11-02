@@ -21,6 +21,10 @@ jobs:
       with:
         java-version: '16'
         distribution: 'adopt'
+    - name: Set up Maven
+      uses: stCarolas/setup-maven@v4.5
+      with:
+        maven-version: 3.8.2
     - name: Cache Maven packages
       uses: actions/cache@v2
       with:
